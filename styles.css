@@ -1,0 +1,122 @@
+:root {
+  --light-grey: #f5f6f7;
+  --dark-blue: #0a0a23;
+  --soft-pink: #ffadad;
+  --soft-blue: #a0c4ff;
+  --soft-green: #b9fbc0;
+  --soft-yellow: #ffeaa7;
+  --soft-purple: #4d0c72;
+  --soft-orange: #ffb480;
+  --dark-text: #000000;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: var(--soft-pink);
+  color: var(--dark-text);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.container {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--soft-blue);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+fieldset {
+  background: var(--soft-yellow);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+legend {
+  font-weight: bold;
+  color: var(--soft-purple);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--soft-orange);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--dark-text);
+  transition: 0.3s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: var(--soft-green);
+}
+
+input, select {
+  width: auto;
+  padding: 8px;
+  border: 2px solid var(--soft-purple);
+  border-radius: 8px;
+  margin-top: 5px;
+  background: var(--soft-blue);
+  color: var(--dark-text);
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+#entry-dropdown {
+  width: auto;
+}
+
+#add-entry {
+  white-space: nowrap;
+}
+
+.output {
+  background: var(--soft-green);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--dark-text);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .controls {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  button {
+    width: auto;
+  }
+}
