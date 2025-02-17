@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=DynaPuff:wght@400..700&family=Freckle+Face&family=MuseoModerno:ital@0;1&family=Niconne&family=Ruda:wght@400..900&display=swap');
+*{
+  font-family: museomoderno;
+}
 :root {
   --light-grey: #f5f6f7;
   --dark-blue: #0a0a23;
@@ -22,7 +26,9 @@ body {
 h1 {
   font-size: 4rem;
   margin-bottom: 20px;
-  color: black;
+  color: rgb(255, 255, 255);
+  font-family: dynapuff;
+  text-shadow: 2px 2px #d36464;
 }
 
 .container {
@@ -89,6 +95,8 @@ input, select {
 
 #entry-dropdown {
   width: auto;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 #add-entry {
@@ -104,6 +112,18 @@ input, select {
   color: var(--dark-text);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+..input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between different entries */
+}
+
+.entry-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px; /* Space between inputs */
+}
 
 @media (max-width: 768px) {
   .container {
@@ -115,6 +135,21 @@ input, select {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  
+  button {
+    width: auto;
+  }
+  .entry-group {
+    flex-direction: column; /* Stack name and calories vertically */
+    align-items: flex-start;
+  }
+
+  .entry-group input {
+    width: 100%; /* Make inputs take full width */
+  }
+}
+
+
   
   button {
     width: auto;
